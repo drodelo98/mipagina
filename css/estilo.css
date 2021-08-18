@@ -75,6 +75,7 @@ nav {
     flex-wrap: wrap;
     background-color: f5f3f4;
     justify-content: center;
+    padding-top: 4.3rem;
 }
 
 .container-main__foto{
@@ -130,9 +131,9 @@ nav {
 }
 .aboutme{
     padding: 2rem;
+    padding-top: 7rem;
     width: 100%;
     background-color: f5f3f4;
-    
 }
 
 .container-footer{
@@ -145,6 +146,7 @@ nav {
 
 .interests{
     margin-bottom: 5rem;
+    padding-top: 7rem;
 }
 
 .network{
@@ -155,6 +157,7 @@ nav {
     display: flex;
     flex-wrap: wrap;
 }
+
 
 .network .titulo1{
     width: 100%;
@@ -184,3 +187,4 @@ nav {
 .botonarriba a{
     padding: 0rem;
 }
+
