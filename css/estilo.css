@@ -1,3 +1,11 @@
+:root {
+    --just-white: #e9ecef;
+    --warm-black: #201E1C;
+    --off-white: #FAF8F7;
+}
+
+
+
 *{
     box-sizing: border-box;
     padding: 0;
@@ -12,184 +20,263 @@ html {
 
 body {
     font-size: 1.6rem;
-    background-color: #e9ecef;
+    background-color: var(--just-white);
 }
 
 
-.header{
-    margin:0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    height: auto;
-    width: 100%;
-    position: sticky;
+header {
     z-index: 100;
+    position: fixed;
     top: 0px;
-}
-
-.container-head__logo{
-    padding-top: 4rem;
-    padding-bottom: 2.5rem;
-    width: 85%;
-    color: #f8f9fa;
-    font-size: 3rem;
-    font-weight:400;
-    text-align: center;
-    transform: rotate(-3deg); 
-    border-radius: 0.6em;
-    margin-bottom: 2rem;
-    background-image: radial-gradient(circle at 15.19% 91.48%, #553604 0, #503801 5.56%, #4a3a00 11.11%, #453c00 16.67%, #3f3e01 22.22%, #394003 27.78%, #324107 33.33%, #2b430c 38.89%, #234411 44.44%, #194517 50%, #0b461d 55.56%, #004723 61.11%, #004729 66.67%, #004830 72.22%, #004836 77.78%, #00483d 83.33%, #004843 88.89%, #00484a 94.44%, #004850 100%);
-}
-
-nav {
     width: 100%;
+    height: 60px;
+    justify-content: center;
+    backdrop-filter: blur(10px);  
 }
+
 .container-head__menu{
+    min-width: 320px;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     justify-content:space-evenly;
     width: 100%;
-    backdrop-filter: blur(10px);
-    
-
+    padding-top: 5px;
+    list-style: none;
 }
+
 .nav-item{
-    display: inline-block;
-    padding: 1rem;
-    width: auto;
+    width: auto; 
+    font-weight: 500;
+}
+
+.nav-item:hover{
+    transform: scale(1.1);
 }
 .nav-item a, .icono a, .botonarriba a{
     display: inline-block;
     padding: 1rem;
     width: auto;
-    text-decoration: none;
-    color: #212529;
     font-size: 2rem;
+    text-decoration: none;
+    color: var(--warm-black);
 }
 
-.container-main {
+.main--profile{
+    min-width: 320px;
+    margin-top: 80px;
     width: 100%;
-    margin:0 auto;
+    height: 350px;
     display: flex;
     flex-wrap: wrap;
-    background-color: f5f3f4;
     justify-content: center;
-    padding-top: 4.3rem;
+    padding-top: 20px;  
+}
+.main--profile__picture {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border: 2px solid var(--just-white);
+    border-radius: 50%;
+    background-image: url(../images/foto1-mini.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
 
-.container-main__foto{
-    justify-content: center;
-    display: flex;
-    width: 100%;
-    height: auto;  
-}
-
-.container-main__foto .foto{
-    width: 25rem;
-    height: 25rem;
-    border-radius: 12.5em;
-    margin-bottom: -5rem;
-    margin-top: 2rem;
-    position: relative;
-    z-index: 90;
-    border: 0.3rem solid #e9ecef;
-    margin-left: 0.5rem;
-}
-
-.container-main__foto .logo{
-    width: 21rem;
-    height: 21rem;
-    margin-top: 3rem;
-    position: relative;
-    z-index: 90;
-}
-
-.container-main__foto .logo:hover{
-    margin-top: 3rem;
-    position: relative;
-    top: 1rem;
-    z-index: 90;
-}
-
-.titulo1{
+.main--profile__logo{
+    position: absolute;
+    top: 310px;
+    transform: rotate(-3deg);
+    min-width: 320px;
+    width: 80%;
+    padding: 35px 7px 20px 7px;
+    border-radius: 20px;
     text-align: center;
-    font-size: 3rem; 
+    background-image: radial-gradient(circle at 15.19% 91.48%, #553604 0, #503801 5.56%, #4a3a00 11.11%, #453c00 16.67%, #3f3e01 22.22%, #394003 27.78%, #324107 33.33%, #2b430c 38.89%, #234411 44.44%, #194517 50%, #0b461d 55.56%, #004723 61.11%, #004729 66.67%, #004830 72.22%, #004836 77.78%, #00483d 83.33%, #004843 88.89%, #00484a 94.44%, #004850 100%);
+    box-shadow: 0px 4px 20px 3px rgba(0, 0, 0, 0.445);
 }
 
-.fas , .fab, .fa-solid{
-    font-size: 6rem;
+.main--profile__logo:hover{
+    transition-duration: 6s;
+    transition-property: color;
+    background-image: radial-gradient(circle at 26.98% 69.31%, #001113 0, #001115 3.33%, #001016 6.67%, #001018 10%, #000f19 13.33%, #000e1a 16.67%, #000e1a 20%, #000d1b 23.33%, #000c1b 26.67%, #040b1b 30%, #070a1a 33.33%, #0b091a 36.67%, #0f0819 40%, #120718 43.33%, #140617 46.67%, #160515 50%, #180413 53.33%, #190411 56.67%, #1a030f 60%, #1b030c 63.33%, #1c0309 66.67%, #1c0305 70%, #1d0302 73.33%, #1c0400 76.67%, #1c0400 80%, #1b0500 83.33%, #1b0600 86.67%, #1a0700 90%, #180800 93.33%, #170900 96.67%, #150a00 100%);  
 }
 
-.icono{
-    display: inline-block;
+.main--profile__logo h2{
+    font-size: 3rem;
+    font-weight: 100;
+    color: var(--off-white);    
+}
+
+.main--about-me{
+    min-width: 320px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     width: 100%;
     height: auto;
+    padding: 10px;
+    padding-top: 60px;
+    color: var(--warm-black);
+}
+
+.main--about-me .logo{
+    position: absolute;
+    width: 60px;
+    height: 70px;
+    background-image: url(../images/astronaut.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main--about-me h2{
+    width: 100%;
+    margin-top: 75px;
+    margin-bottom: 20px;
+    font-size: 3rem;
+    font-weight: 400;
     text-align: center;
-    
-    
 }
-.aboutme{
-    padding: 2rem;
-    padding-top: 7rem;
+
+.main--about-me p{
     width: 100%;
-    background-color: f5f3f4;
+    text-align: center;
 }
 
-.aboutme .titulo1{
-    padding-bottom: 3rem;
-}
-
-.container-footer{
-    margin:0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: blue;
-
-}
-
-.interests{
-    margin-bottom: 5rem;
-    padding-top: 7rem;
-}
-
-.network{
-    padding-top: 3rem;
-    background-image: radial-gradient(circle at 15.19% 91.48%, #553604 0, #503801 5.56%, #4a3a00 11.11%, #453c00 16.67%, #3f3e01 22.22%, #394003 27.78%, #324107 33.33%, #2b430c 38.89%, #234411 44.44%, #194517 50%, #0b461d 55.56%, #004723 61.11%, #004729 66.67%, #004830 72.22%, #004836 77.78%, #00483d 83.33%, #004843 88.89%, #00484a 94.44%, #004850 100%);
-    clip-path: polygon(0 13%, 100% 0, 100% 100%, 0% 100%);
-    width: 100%;
+.main--interests{
+    min-width: 320px;
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-
-.network .titulo1{
     width: 100%;
-    padding-bottom: 1rem;
+    height: auto;
+    padding: 10px;
+    padding-top: 60px;
 }
 
-.network .icono{
-    width: 30%;
-    padding-bottom: 1rem;
+.main--interests .logo{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background-image: url(../images/code.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat
 }
 
-.icono a{
-    color: black;
+.main--interests h2{
+    width: 100%;
+    margin-top: 75px;
+    margin-bottom: 20px;
+    font-size: 3rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.interests--logo-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 85%;
+}
+
+.interests--logo-container a{
+    width: 200px;
+    height: 200px;
+    margin: 15px;
+}
+
+.interests--logo-container a:hover{
+    transform: scale(1.05);
+}
+
+.interests--logo-container img{
+    width: 100%;
+    height: 100%;
+}
+
+.main-networks{
+    min-width: 320px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 60px 10px 30px 10px;
+    background-image: radial-gradient(circle at 15.19% 91.48%, #553604 0, #503801 5.56%, #4a3a00 11.11%, #453c00 16.67%, #3f3e01 22.22%, #394003 27.78%, #324107 33.33%, #2b430c 38.89%, #234411 44.44%, #194517 50%, #0b461d 55.56%, #004723 61.11%, #004729 66.67%, #004830 72.22%, #004836 77.78%, #00483d 83.33%, #004843 88.89%, #00484a 94.44%, #004850 100%);
+    clip-path: polygon(0 28%, 100% 12%, 100% 100%, 0% 100%);
+}
+
+.main-networks h2{
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.main-networks .networks-container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.networks-container a{
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+.networks-container a:hover{
+    transform: scale(1.1);
+}
+
+
+.networks-container .instagram{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/tw.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+.networks-container .facebook{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/fb.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+.networks-container .twitter{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/inst.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat
 }
 
 .botonarriba{
+    z-index: 100;
     position: fixed;
-    bottom: 2.5rem;
-    right: 1rem;
-    color: grey;
+    right: 20px;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/up.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-
-.botonarriba .fas{
-    font-size: 5rem;
-}
-
-.botonarriba a{
-    padding: 0rem;
-}
-

@@ -1,41 +1,14 @@
-.container-main__foto{
-    justify-content: left;
+.main--profile{
+    height: 250px;
+}   
+
+.main--profile__picture {
+    left: 30px;
 }
 
-
-
-.container-main__foto .foto{
-    width: 28rem;
-    height: 28rem;
-    border-radius: 14rem;
-    margin-top: 2rem;
-    margin-left: 0.5rem;
-}
-
-
-.container-head__logo{
-    padding-top: 2.5rem;
-    padding-right: 2rem;
-    position: relative;
-    bottom: 17rem;
-    left: 3.5rem;
-    font-size: 3rem;
+.main--profile__logo{
+    top: 150px;
+    left: 100px;
     text-align: right;
-    margin-bottom: -10rem;
-}
-
-.interests{
-    margin-bottom: 5rem;
-    padding-top: 7rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.interests .container-main__foto{
-    width: auto;
-}
-
-.interests .titulo1{
-    width: 100%;
+    padding: 15px
 }

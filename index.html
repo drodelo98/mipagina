@@ -7,15 +7,15 @@
     <link rel="stylesheet" href="./css/estilo.css">
     <link rel="stylesheet" href="./css/tablet.css" media="screen and (min-width:600px)">
     <link rel="stylesheet" href="./css/desktop.css" media="screen and (min-width:800px)">
+    <link rel="stylesheet" href="./css/big-desktop.css" media="screen and (min-width:1400px)">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/1e74fc1a48.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@100;400;700&display=swap" rel="stylesheet">
     <title>Sebastian Rodelo</title>
     <link rel="shortcut icon" type="image/ico" href="./images/1.ico"/>
 </head>
-<body>
-    <header class="header">
+<body id="up">
+    <header>
         <nav>
             <ul class="container-head__menu">
                 <li class="nav-item"><a href="#aboutme">ME</a></li>
@@ -24,72 +24,48 @@
             </ul>
         </nav>
     </header>
+    <main>
+        <section class="main--profile">
+            <div class="main--profile__logo">
+               <h2>("hello world")<br>I'm Sebastian Rodelo</h2>
+            </div>
+            <div class="main--profile__picture"></div>
+        </section>
+        <section class="main--about-me" id="aboutme">
+            <span class="logo"></span>
+            <h2>About me</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus optio architecto rerum quas ullam itaque maiores labore porro error officia perspiciatis veniam laborum, libero commodi non voluptatem sit odio esse. Tengo 22 años y aunque estudié contaduría lo que realmente me apasiona es la teconología. Estoy aprendiendo desarrollo web y espero en algún momento trabajar en esta área. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus optio architecto rerum quas ullam itaque maiores labore porro error officia perspiciatis veniam laborum, libero commodi non voluptatem sit odio esse.</p>
+        </section>
+        <section class="main--interests" id="interests">
+            <span class="logo"></span>
+            <h2>Interested in</h2>
 
-
-    <main class="container-main" id="arriba">
-        <picture class="container-main__foto" >
-            <div><img src="./images/foto1.png" alt="imagen" class="foto"></div>
-        </picture>
-        <div class="container-head__logo">
-           ("hello world")<br>I'm Sebastian Rodelo
-        </div>
-        
-        <section class="aboutme" id="aboutme">
-            <div class="icono"><i class="fas fa-user-astronaut" ></i></div>      
-            <p class="titulo1">About me</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus optio architecto rerum quas ullam itaque maiores labore porro error officia perspiciatis veniam laborum, libero commodi non voluptatem sit odio esse. Tengo 22 años y aunque estudié contaduría lo que realmente me apasiona es la teconología. Estoy  aprendiendo desarrollo web y espero en algún momento trabajar en esta área. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus optio architecto rerum quas ullam itaque maiores labore porro error officia perspiciatis veniam laborum, libero commodi non voluptatem sit odio esse.</p>
+            <div class="interests--logo-container">
+                <a href="https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/HTML_basics" target="_blank"><img src="./images/html.svg" alt="imagen"></a>
+                <a href="https://www.redhat.com/es/topics/linux" target="_blank"><img src="./images/css.svg" alt="imagen" class=""></a>
+                <a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank"><img src="./images/js.svg" alt="imagen" class=""></a>
+                <a href="https://www.php.net/manual/es/intro-whatis.php" target="_blank"><img src="./images/php.svg" alt="imagen"></a>
+                <a href="https://www.python.org/about/" target="_blank"><img src="./images/python.svg" alt="imagen" class=""></a>
+                <a href="https://www.java.com/es/download/help/whatis_java.html" target="_blank"><img src="./images/java.svg" alt="imagen" class=""></a>
+                <a href="https://es.reactjs.org/" target="_blank"><img src="./images/react.svg" alt="imagen" class=""></a>
+                <a href="https://laravel.com/" target="_blank"><img src="./images/laravel.svg" alt="imagen" class=""></a>
+                <a href="https://www.djangoproject.com/" target="_blank"><img src="./images/django.svg" alt="imagen" class=""></a>
+                <a href="https://tailwindcss.com/" target="_blank"><img src="./images/tailwind.svg" alt="imagen" class=""></a>
+                <a href="https://www.redhat.com/es/topics/linux" target="_blank"><img src="./images/linux.svg" alt="imagen" class=""></a>
+                <a href="https://www.redhat.com/es/topics/linux" target="_blank"><img src="./images/webpack.svg" alt="imagen" class=""></a>
+            </div>
         </section>
-        
-        
-        <section class="interests" id="interests">
-            <div class="icono" ><i class="fas fa-code"></i></div>
-            <p class="titulo1" >Interested in</p>
-            <picture class="container-main__foto">
-                <a href="https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/HTML_basics" target="_blank"><img src="./images/html.svg" alt="imagen" class="logo"></a></div>
-            </picture>
-            <picture class="container-main__foto">
-                <a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank"><img src="./images/css.svg" alt="imagen" class="logo"></a>
-            </picture>
-            <picture class="container-main__foto">
-                <a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank"><img src="./images/js.svg" alt="imagen" class="logo"></a>
-            </picture>
-            <picture class="container-main__foto">
-                <a href="https://www.php.net/manual/es/intro-whatis.php" target="_blank"><img src="./images/php.svg" alt="imagen" class="logo"></a>             
-            </picture>
-            <picture class="container-main__foto">
-                <a href="https://www.python.org/about/" target="_blank"><img src="./images/python.svg" alt="imagen" class="logo"></a>               
-            </picture>
-            <picture class="container-main__foto">
-                <a href="https://www.java.com/es/download/help/whatis_java.html" target="_blank"><img src="./images/java.svg" alt="imagen" class="logo"></a>               
-            </picture>
-            <picture class="container-main__foto">
-                <a href="https://es.reactjs.org/" target="_blank"><img src="./images/react.svg" alt="imagen" class="logo"></a>
-            </picture>
-            <picture class="container-main__foto">
-                <a href="https://laravel.com/" target="_blank"><img src="./images/laravel.svg" alt="imagen" class="logo"></a>               
-            </picture>
-            <picture class="container-main__foto">
-                <a href="https://www.djangoproject.com/" target="_blank"><img src="./images/django.svg" alt="imagen" class="logo"></a>              
-            </picture>
-            <picture class="container-main__foto">
-                <a href="https://tailwindcss.com/" target="_blank"><img src="./images/tailwind.svg" alt="imagen" class="logo"></a>                
-            </picture>
-            <picture class="container-main__foto">
-                <a href="https://www.redhat.com/es/topics/linux" target="_blank"><img src="./images/linux.svg" alt="imagen" class="logo"></a>                
-            </picture>
-        </section>
-        <section class="network" id="networks">      
-            <div class="titulo1"><p>Social networks</p></div>
-            <div class="icono"><a href="https://www.instagram.com/sebastianrodelo98/"><i class="fab fa-instagram"></i></a></div>
-            <div class="icono"><a href="https://www.facebook.com/sebastianrodelo1998/"><i class="fab fa-facebook-square"></i></a></div>
-            <div class="icono"><a href="https://twitter.com/SebastianRodelo"><i class="fab fa-twitter-square"></i></a></div>
-        </section>
-        <div class="botonarriba">
-            <a href="#arriba"><i class="fas fa-arrow-up"></i></a>
-        </div>
     </main>
-    <footer class="container-footer">
-
+    <a href="#up" class="botonarriba"><span></span></a>
+    <footer>
+        <section class="main-networks" id="networks">           
+            <h2>Social networks</h2>
+            <div class="networks-container">
+                <a href="https://www.instagram.com/sebastianrodelo98/"><span class="instagram"></span></a>
+                <a href="https://www.facebook.com/sebastianrodelo1998/"><span class="facebook"></span></a>
+                <a href="https://twitter.com/SebastianRodelo"><span class="twitter"></span></a>
+            </div>
+        </section>
     </footer>
 </body>
 </html>
