@@ -194,6 +194,7 @@ header {
 
 .interests--logo-container a:hover{
     transform: scale(1.05);
+    filter: drop-shadow(2px 4px 8px #575757);
 }
 
 .interests--logo-container img{
